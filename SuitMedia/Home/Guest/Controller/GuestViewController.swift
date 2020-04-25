@@ -63,9 +63,14 @@ class GuestViewController: UIViewController {
             case .failure(let error):
                 print(error)
                 self.dataSource.items.removeAll()
+                Alert.presentAlert(at: self, with: "Error", message: error.rawValue, completion: {
+                    self.navigationController?.popViewController(animated: true)
+                })
             }
-            self.spinner.stopAnimating()
-            self.collectionView.reloadSections(IndexSet(integer: 0))
+            DispatchQueue.main.async {
+                self.spinner.stopAnimating()
+                self.collectionView.reloadSections(IndexSet(integer: 0))
+            }
         }
     }
     

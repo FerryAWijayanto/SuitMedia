@@ -49,6 +49,7 @@ class EventVC: UIViewController {
         configureNavigation()
         configureTableView()
         fetchEvent()
+        
     }
     
     override var prefersStatusBarHidden: Bool {

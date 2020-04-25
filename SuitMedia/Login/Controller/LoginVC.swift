@@ -34,9 +34,9 @@ extension LoginVC: LoginViewDelegate {
     
     func presentToCheck(palindrome: String) {
         store.isPalindrome(word: palindrome, success: {
-            Alert.presentAlert(at: self, with: "isPalindrome", message: "true")
+            Alert.presentAlert(at: self, with: "isPalindrome", message: "true", completion: nil)
         }) {
-            Alert.presentAlert(at: self, with: "notPalindrome", message: "false")
+            Alert.presentAlert(at: self, with: "notPalindrome", message: "false", completion: nil)
         }
     }
 }

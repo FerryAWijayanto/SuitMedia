@@ -181,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				C86953B22453F37A00B8ED79 /* HomeVC.swift */,
-				C86953C52454211D00B8ED79 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				C86953C72454247B00B8ED79 /* GuestViewController.swift */,
+				C86953C52454211D00B8ED79 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
